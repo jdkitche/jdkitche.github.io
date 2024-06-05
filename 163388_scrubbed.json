@@ -1,0 +1,1473 @@
+{
+  "url": "https://pendo.zendesk.com/api/v2/tickets/163388.json",
+  "id": 163388,
+  "external_id": null,
+  "via": {
+    "channel": "web",
+    "source": {
+      "from": {},
+      "to": {},
+      "rel": null
+    },
+    "id": 0
+  },
+  "created_at": "2023-12-01T19:15:40.000Z",
+  "updated_at": "2023-12-06T15:04:04.000Z",
+  "generated_timestamp": 1701875044,
+  "type": "incident",
+  "subject": "Scheduling a guide ",
+  "raw_subject": "Scheduling a guide ",
+  "description": "I'm setting this is a high priority since its Friday and I need to make sure I have this configured and ready to go for Monday. I have a guide that I would like to schedule it to go live on Monday. When I look at the knowledge base article it says that in order for a scheduled guide to publish it has to be set to \"scheduled\" status. I set the schedule setting on the guide itself, but I don't scheduled as an option on the guide for the status: ![](https://pendo.zendesk.com/attachments/token/EdWUohWunxf9fmLVrghSomSeb/?name=mceclip0.png)",
+  "priority": "high",
+  "status": "closed",
+  "follower_ids": [],
+  "email_cc_ids": [],
+  "forum_topic_id": null,
+  "problem_id": null,
+  "has_incidents": false,
+  "is_public": true,
+  "due_at": null,
+  "tags": [
+    "ab_suggest_true",
+    "agentrepliedtruechecked",
+    "ben",
+    "customer",
+    "eng_guides",
+    "eng_guides_other",
+    "engagerc",
+    "frame-guide-display-issue",
+    "group_2",
+    "productarea_engage",
+    "self-solve",
+    "sgmt_commercial",
+    "slack_alerted",
+    "t1agentrepliedtrue",
+    "transactional_request",
+    "us-west"
+  ],
+  "custom_fields": [
+    {
+      "id": 360006424832,
+      "value": null
+    },
+    {
+      "id": 360021939972,
+      "value": null
+    },
+    {
+      "id": 360022004231,
+      "value": null
+    },
+    {
+      "id": 360006424852,
+      "value": null
+    },
+    {
+      "id": 11424585287963,
+      "value": null
+    },
+    {
+      "id": 14233436949275,
+      "value": null
+    },
+    {
+      "id": 4584520421659,
+      "value": null
+    },
+    {
+      "id": 10093928586011,
+      "value": null
+    },
+    {
+      "id": 14233191660315,
+      "value": null
+    },
+    {
+      "id": 10089548889627,
+      "value": null
+    },
+    {
+      "id": 16898584559899,
+      "value": null
+    },
+    {
+      "id": 4625416406811,
+      "value": false
+    },
+    {
+      "id": 16899866446875,
+      "value": null
+    },
+    {
+      "id": 13683256879131,
+      "value": null
+    },
+    {
+      "id": 10086785514523,
+      "value": "eng_guides_other"
+    },
+    {
+      "id": 16896834961691,
+      "value": "transactional_request"
+    },
+    {
+      "id": 13683650954011,
+      "value": null
+    },
+    {
+      "id": 10089676314395,
+      "value": null
+    },
+    {
+      "id": 14233398975003,
+      "value": null
+    },
+    {
+      "id": 4584451062811,
+      "value": null
+    },
+    {
+      "id": 11424478182939,
+      "value": null
+    },
+    {
+      "id": 13683414978331,
+      "value": null
+    },
+    {
+      "id": 11424625319195,
+      "value": null
+    },
+    {
+      "id": 10094024845339,
+      "value": null
+    },
+    {
+      "id": 10086671447835,
+      "value": "eng_guides"
+    },
+    {
+      "id": 360039416092,
+      "value": null
+    },
+    {
+      "id": 360023338272,
+      "value": null
+    },
+    {
+      "id": 360020998691,
+      "value": null
+    },
+    {
+      "id": 360021939752,
+      "value": null
+    },
+    {
+      "id": 360023338292,
+      "value": null
+    },
+    {
+      "id": 360006446391,
+      "value": null
+    },
+    {
+      "id": 360006424632,
+      "value": null
+    },
+    {
+      "id": 360021939512,
+      "value": null
+    },
+    {
+      "id": 360009939772,
+      "value": null
+    },
+    {
+      "id": 360029429571,
+      "value": null
+    },
+    {
+      "id": 360023358531,
+      "value": null
+    },
+    {
+      "id": 360023001412,
+      "value": null
+    },
+    {
+      "id": 114097410372,
+      "value": null
+    },
+    {
+      "id": 1260819142730,
+      "value": false
+    },
+    {
+      "id": 360006446411,
+      "value": null
+    },
+    {
+      "id": 360022006091,
+      "value": null
+    },
+    {
+      "id": 360022537291,
+      "value": null
+    },
+    {
+      "id": 360006424652,
+      "value": null
+    },
+    {
+      "id": 360006459732,
+      "value": null
+    },
+    {
+      "id": 360039416152,
+      "value": null
+    },
+    {
+      "id": 360023372632,
+      "value": null
+    },
+    {
+      "id": 360006446431,
+      "value": null
+    },
+    {
+      "id": 1260826024550,
+      "value": null
+    },
+    {
+      "id": 360021940072,
+      "value": null
+    },
+    {
+      "id": 360022017152,
+      "value": null
+    },
+    {
+      "id": 360022404992,
+      "value": null
+    },
+    {
+      "id": 360006446211,
+      "value": null
+    },
+    {
+      "id": 114102339971,
+      "value": null
+    },
+    {
+      "id": 360030770311,
+      "value": null
+    },
+    {
+      "id": 360036287111,
+      "value": null
+    },
+    {
+      "id": 360022006151,
+      "value": null
+    },
+    {
+      "id": 360020831111,
+      "value": null
+    },
+    {
+      "id": 360006423952,
+      "value": null
+    },
+    {
+      "id": 10468539040923,
+      "value": null
+    },
+    {
+      "id": 4625577477531,
+      "value": null
+    },
+    {
+      "id": 6183795034523,
+      "value": "self-solve"
+    },
+    {
+      "id": 14233762466459,
+      "value": null
+    },
+    {
+      "id": 4625417374363,
+      "value": false
+    },
+    {
+      "id": 18589767830171,
+      "value": false
+    },
+    {
+      "id": 16899983413659,
+      "value": null
+    },
+    {
+      "id": 14233833513883,
+      "value": null
+    },
+    {
+      "id": 10089794512283,
+      "value": null
+    },
+    {
+      "id": 16897270228379,
+      "value": "productarea_engage"
+    },
+    {
+      "id": 11274647448219,
+      "value": "engagerc"
+    },
+    {
+      "id": 11424765127835,
+      "value": null
+    },
+    {
+      "id": 13682861420443,
+      "value": null
+    },
+    {
+      "id": 11000346850203,
+      "value": "Guides"
+    },
+    {
+      "id": 4638460557467,
+      "value": null
+    },
+    {
+      "id": 10087044300699,
+      "value": null
+    },
+    {
+      "id": 4625513858203,
+      "value": null
+    },
+    {
+      "id": 4625432790939,
+      "value": false
+    },
+    {
+      "id": 16899927657883,
+      "value": null
+    },
+    {
+      "id": 10089461076123,
+      "value": null
+    },
+    {
+      "id": 14233283286683,
+      "value": null
+    },
+    {
+      "id": 5305863790491,
+      "value": null
+    },
+    {
+      "id": 4625422376859,
+      "value": false
+    },
+    {
+      "id": 10086869204123,
+      "value": null
+    },
+    {
+      "id": 16628497809051,
+      "value": "Group 2"
+    },
+    {
+      "id": 13683885835931,
+      "value": null
+    },
+    {
+      "id": 10468554410139,
+      "value": null
+    },
+    {
+      "id": 16899934358427,
+      "value": null
+    },
+    {
+      "id": 17070499597467,
+      "value": null
+    },
+    {
+      "id": 20742769054875,
+      "value": null
+    },
+    {
+      "id": 5093297920923,
+      "value": null
+    },
+    {
+      "id": 15168004726171,
+      "value": null
+    },
+    {
+      "id": 14233349169819,
+      "value": null
+    },
+    {
+      "id": 18564601259931,
+      "value": "US"
+    },
+    {
+      "id": 10590931627163,
+      "value": false
+    },
+    {
+      "id": 4625285229979,
+      "value": null
+    },
+    {
+      "id": 10089502518939,
+      "value": null
+    },
+    {
+      "id": 10093933935003,
+      "value": null
+    },
+    {
+      "id": 10094048496283,
+      "value": null
+    },
+    {
+      "id": 360022006171,
+      "value": null
+    },
+    {
+      "id": 4625440629403,
+      "value": false
+    },
+    {
+      "id": 20747278740123,
+      "value": true
+    },
+    {
+      "id": 10086845117851,
+      "value": null
+    },
+    {
+      "id": 360027409052,
+      "value": null
+    },
+    {
+      "id": 360027457951,
+      "value": null
+    },
+    {
+      "id": 360020604832,
+      "value": null
+    },
+    {
+      "id": 360009581731,
+      "value": null
+    },
+    {
+      "id": 360023393451,
+      "value": null
+    },
+    {
+      "id": 360032766131,
+      "value": null
+    },
+    {
+      "id": 360032443332,
+      "value": null
+    },
+    {
+      "id": 360032766151,
+      "value": null
+    },
+    {
+      "id": 360022003911,
+      "value": null
+    },
+    {
+      "id": 114096808392,
+      "value": null
+    },
+    {
+      "id": 360022004431,
+      "value": null
+    },
+    {
+      "id": 360022019792,
+      "value": null
+    },
+    {
+      "id": 360029424611,
+      "value": "safetychain1"
+    },
+    {
+      "id": 360024371171,
+      "value": null
+    },
+    {
+      "id": 360041817831,
+      "value": null
+    },
+    {
+      "id": 360006424812,
+      "value": null
+    },
+    {
+      "id": 360021939692,
+      "value": null
+    }
+  ],
+  "satisfaction_rating": {
+    "score": "offered"
+  },
+  "sharing_agreement_ids": [],
+  "custom_status_id": 10688129,
+  "fields": [
+    {
+      "id": 360006424832,
+      "value": null
+    },
+    {
+      "id": 360021939972,
+      "value": null
+    },
+    {
+      "id": 360022004231,
+      "value": null
+    },
+    {
+      "id": 360006424852,
+      "value": null
+    },
+    {
+      "id": 11424585287963,
+      "value": null
+    },
+    {
+      "id": 14233436949275,
+      "value": null
+    },
+    {
+      "id": 4584520421659,
+      "value": null
+    },
+    {
+      "id": 10093928586011,
+      "value": null
+    },
+    {
+      "id": 14233191660315,
+      "value": null
+    },
+    {
+      "id": 10089548889627,
+      "value": null
+    },
+    {
+      "id": 16898584559899,
+      "value": null
+    },
+    {
+      "id": 4625416406811,
+      "value": false
+    },
+    {
+      "id": 16899866446875,
+      "value": null
+    },
+    {
+      "id": 13683256879131,
+      "value": null
+    },
+    {
+      "id": 10086785514523,
+      "value": "eng_guides_other"
+    },
+    {
+      "id": 16896834961691,
+      "value": "transactional_request"
+    },
+    {
+      "id": 13683650954011,
+      "value": null
+    },
+    {
+      "id": 10089676314395,
+      "value": null
+    },
+    {
+      "id": 14233398975003,
+      "value": null
+    },
+    {
+      "id": 4584451062811,
+      "value": null
+    },
+    {
+      "id": 11424478182939,
+      "value": null
+    },
+    {
+      "id": 13683414978331,
+      "value": null
+    },
+    {
+      "id": 11424625319195,
+      "value": null
+    },
+    {
+      "id": 10094024845339,
+      "value": null
+    },
+    {
+      "id": 10086671447835,
+      "value": "eng_guides"
+    },
+    {
+      "id": 360039416092,
+      "value": null
+    },
+    {
+      "id": 360023338272,
+      "value": null
+    },
+    {
+      "id": 360020998691,
+      "value": null
+    },
+    {
+      "id": 360021939752,
+      "value": null
+    },
+    {
+      "id": 360023338292,
+      "value": null
+    },
+    {
+      "id": 360006446391,
+      "value": null
+    },
+    {
+      "id": 360006424632,
+      "value": null
+    },
+    {
+      "id": 360021939512,
+      "value": null
+    },
+    {
+      "id": 360009939772,
+      "value": null
+    },
+    {
+      "id": 360029429571,
+      "value": null
+    },
+    {
+      "id": 360023358531,
+      "value": null
+    },
+    {
+      "id": 360023001412,
+      "value": null
+    },
+    {
+      "id": 114097410372,
+      "value": null
+    },
+    {
+      "id": 1260819142730,
+      "value": false
+    },
+    {
+      "id": 360006446411,
+      "value": null
+    },
+    {
+      "id": 360022006091,
+      "value": null
+    },
+    {
+      "id": 360022537291,
+      "value": null
+    },
+    {
+      "id": 360006424652,
+      "value": null
+    },
+    {
+      "id": 360006459732,
+      "value": null
+    },
+    {
+      "id": 360039416152,
+      "value": null
+    },
+    {
+      "id": 360023372632,
+      "value": null
+    },
+    {
+      "id": 360006446431,
+      "value": null
+    },
+    {
+      "id": 1260826024550,
+      "value": null
+    },
+    {
+      "id": 360021940072,
+      "value": null
+    },
+    {
+      "id": 360022017152,
+      "value": null
+    },
+    {
+      "id": 360022404992,
+      "value": null
+    },
+    {
+      "id": 360006446211,
+      "value": null
+    },
+    {
+      "id": 114102339971,
+      "value": null
+    },
+    {
+      "id": 360030770311,
+      "value": null
+    },
+    {
+      "id": 360036287111,
+      "value": null
+    },
+    {
+      "id": 360022006151,
+      "value": null
+    },
+    {
+      "id": 360020831111,
+      "value": null
+    },
+    {
+      "id": 360006423952,
+      "value": null
+    },
+    {
+      "id": 10468539040923,
+      "value": null
+    },
+    {
+      "id": 4625577477531,
+      "value": null
+    },
+    {
+      "id": 6183795034523,
+      "value": "self-solve"
+    },
+    {
+      "id": 14233762466459,
+      "value": null
+    },
+    {
+      "id": 4625417374363,
+      "value": false
+    },
+    {
+      "id": 18589767830171,
+      "value": false
+    },
+    {
+      "id": 16899983413659,
+      "value": null
+    },
+    {
+      "id": 14233833513883,
+      "value": null
+    },
+    {
+      "id": 10089794512283,
+      "value": null
+    },
+    {
+      "id": 16897270228379,
+      "value": "productarea_engage"
+    },
+    {
+      "id": 11274647448219,
+      "value": "engagerc"
+    },
+    {
+      "id": 11424765127835,
+      "value": null
+    },
+    {
+      "id": 13682861420443,
+      "value": null
+    },
+    {
+      "id": 11000346850203,
+      "value": "Guides"
+    },
+    {
+      "id": 4638460557467,
+      "value": null
+    },
+    {
+      "id": 10087044300699,
+      "value": null
+    },
+    {
+      "id": 4625513858203,
+      "value": null
+    },
+    {
+      "id": 4625432790939,
+      "value": false
+    },
+    {
+      "id": 16899927657883,
+      "value": null
+    },
+    {
+      "id": 10089461076123,
+      "value": null
+    },
+    {
+      "id": 14233283286683,
+      "value": null
+    },
+    {
+      "id": 5305863790491,
+      "value": null
+    },
+    {
+      "id": 4625422376859,
+      "value": false
+    },
+    {
+      "id": 10086869204123,
+      "value": null
+    },
+    {
+      "id": 16628497809051,
+      "value": "Group 2"
+    },
+    {
+      "id": 13683885835931,
+      "value": null
+    },
+    {
+      "id": 10468554410139,
+      "value": null
+    },
+    {
+      "id": 16899934358427,
+      "value": null
+    },
+    {
+      "id": 17070499597467,
+      "value": null
+    },
+    {
+      "id": 20742769054875,
+      "value": null
+    },
+    {
+      "id": 5093297920923,
+      "value": null
+    },
+    {
+      "id": 15168004726171,
+      "value": null
+    },
+    {
+      "id": 14233349169819,
+      "value": null
+    },
+    {
+      "id": 18564601259931,
+      "value": "US"
+    },
+    {
+      "id": 10590931627163,
+      "value": false
+    },
+    {
+      "id": 4625285229979,
+      "value": null
+    },
+    {
+      "id": 10089502518939,
+      "value": null
+    },
+    {
+      "id": 10093933935003,
+      "value": null
+    },
+    {
+      "id": 10094048496283,
+      "value": null
+    },
+    {
+      "id": 360022006171,
+      "value": null
+    },
+    {
+      "id": 4625440629403,
+      "value": false
+    },
+    {
+      "id": 20747278740123,
+      "value": true
+    },
+    {
+      "id": 10086845117851,
+      "value": null
+    },
+    {
+      "id": 360027409052,
+      "value": null
+    },
+    {
+      "id": 360027457951,
+      "value": null
+    },
+    {
+      "id": 360020604832,
+      "value": null
+    },
+    {
+      "id": 360009581731,
+      "value": null
+    },
+    {
+      "id": 360023393451,
+      "value": null
+    },
+    {
+      "id": 360032766131,
+      "value": null
+    },
+    {
+      "id": 360032443332,
+      "value": null
+    },
+    {
+      "id": 360032766151,
+      "value": null
+    },
+    {
+      "id": 360022003911,
+      "value": null
+    },
+    {
+      "id": 114096808392,
+      "value": null
+    },
+    {
+      "id": 360022004431,
+      "value": null
+    },
+    {
+      "id": 360022019792,
+      "value": null
+    },
+    {
+      "id": 360029424611,
+      "value": "safetychain1"
+    },
+    {
+      "id": 360024371171,
+      "value": null
+    },
+    {
+      "id": 360041817831,
+      "value": null
+    },
+    {
+      "id": 360006424812,
+      "value": null
+    },
+    {
+      "id": 360021939692,
+      "value": null
+    }
+  ],
+  "followup_ids": [],
+  "ticket_form_id": 16897769447451,
+  "brand_id": 114094272452,
+  "metric_set": {
+    "url": "https://pendo.zendesk.com/api/v2/ticket_metrics/20857582556699.json",
+    "id": 20857582556699,
+    "ticket_id": 163388,
+    "created_at": "2023-12-01T19:15:40.000Z",
+    "updated_at": "2023-12-01T20:23:50.000Z",
+    "group_stations": 1,
+    "assignee_stations": 1,
+    "reopens": 0,
+    "replies": 1,
+    "assignee_updated_at": "2023-12-01T20:23:50.000Z",
+    "requester_updated_at": "2023-12-01T19:45:36.000Z",
+    "status_updated_at": "2023-12-06T15:04:04.000Z",
+    "initially_assigned_at": "2023-12-01T20:23:50.000Z",
+    "assigned_at": "2023-12-01T20:23:50.000Z",
+    "solved_at": "2023-12-01T20:23:50.000Z",
+    "latest_comment_added_at": "2023-12-01T20:23:50.000Z",
+    "reply_time_in_minutes": {
+      "calendar": 68,
+      "business": 68
+    },
+    "first_resolution_time_in_minutes": {
+      "calendar": 68,
+      "business": 68
+    },
+    "full_resolution_time_in_minutes": {
+      "calendar": 68,
+      "business": 68
+    },
+    "agent_wait_time_in_minutes": {
+      "calendar": 0,
+      "business": 0
+    },
+    "requester_wait_time_in_minutes": {
+      "calendar": 68,
+      "business": 68
+    },
+    "on_hold_time_in_minutes": {
+      "calendar": 0,
+      "business": 0
+    }
+  },
+  "dates": {
+    "assignee_updated_at": "2023-12-01T20:23:50.000Z",
+    "requester_updated_at": "2023-12-01T19:45:36.000Z",
+    "status_updated_at": "2023-12-06T15:04:04.000Z",
+    "initially_assigned_at": "2023-12-01T20:23:50.000Z",
+    "assigned_at": "2023-12-01T20:23:50.000Z",
+    "solved_at": "2023-12-01T20:23:50.000Z",
+    "latest_comment_added_at": "2023-12-01T20:23:50.000Z"
+  },
+  "allow_channelback": false,
+  "allow_attachments": true,
+  "from_messaging_channel": false,
+  "submitter": {
+    "id": 15219511038491,
+    "url": "https://pendo.zendesk.com/api/v2/users/15219511038491.json",
+    "name": "Customer Name",
+    "email": "customer@email.com",
+    "created_at": "2023-05-05T21:16:37.000Z",
+    "updated_at": "2024-05-01T18:33:35.000Z",
+    "time_zone": "Eastern Time (US & Canada)",
+    "iana_time_zone": "America/New_York",
+    "phone": null,
+    "shared_phone_number": null,
+    "photo": null,
+    "locale_id": 1,
+    "locale": "en-US",
+    "organization_id": 361351081992,
+    "role": "end-user",
+    "verified": true,
+    "external_id": null,
+    "tags": [],
+    "alias": null,
+    "active": true,
+    "shared": false,
+    "shared_agent": false,
+    "last_login_at": "2024-05-01T18:33:35.000Z",
+    "two_factor_auth_enabled": null,
+    "signature": null,
+    "details": null,
+    "notes": null,
+    "role_type": null,
+    "custom_role_id": null,
+    "moderator": false,
+    "ticket_restriction": "requested",
+    "only_private_comments": false,
+    "restricted_agent": true,
+    "suspended": false,
+    "default_group_id": null,
+    "report_csv": false,
+    "user_fields": {
+      "agent_ooo": false,
+      "free_trial_active": false,
+      "pendo_last_visit_date": null,
+      "quickie_user_settings": null,
+      "sf_created_date": null,
+      "sync_with_salesforce": false
+    }
+  },
+  "requester": {
+    "id": 15219511038491,
+    "url": "https://pendo.zendesk.com/api/v2/users/15219511038491.json",
+    "name": "Customer Name",
+    "email": "customer@email.com",
+    "created_at": "2023-05-05T21:16:37.000Z",
+    "updated_at": "2024-05-01T18:33:35.000Z",
+    "time_zone": "Eastern Time (US & Canada)",
+    "iana_time_zone": "America/New_York",
+    "phone": null,
+    "shared_phone_number": null,
+    "photo": null,
+    "locale_id": 1,
+    "locale": "en-US",
+    "organization_id": 361351081992,
+    "role": "end-user",
+    "verified": true,
+    "external_id": null,
+    "tags": [],
+    "alias": null,
+    "active": true,
+    "shared": false,
+    "shared_agent": false,
+    "last_login_at": "2024-05-01T18:33:35.000Z",
+    "two_factor_auth_enabled": null,
+    "signature": null,
+    "details": null,
+    "notes": null,
+    "role_type": null,
+    "custom_role_id": null,
+    "moderator": false,
+    "ticket_restriction": "requested",
+    "only_private_comments": false,
+    "restricted_agent": true,
+    "suspended": false,
+    "default_group_id": null,
+    "report_csv": false,
+    "user_fields": {
+      "agent_ooo": false,
+      "free_trial_active": false,
+      "pendo_last_visit_date": null,
+      "quickie_user_settings": null,
+      "sf_created_date": null,
+      "sync_with_salesforce": false
+    }
+  },
+  "assignee": {
+    "id": 10801700409371,
+    "url": "https://pendo.zendesk.com/api/v2/users/10801700409371.json",
+    "name": "Pendo Name",
+    "email": "pendo@email.com",
+    "created_at": "2022-11-30T20:12:55.000Z",
+    "updated_at": "2024-05-31T12:48:55.000Z",
+    "time_zone": "Eastern Time (US & Canada)",
+    "iana_time_zone": "America/New_York",
+    "phone": null,
+    "shared_phone_number": null,
+    "photo": null,
+    "locale_id": 1,
+    "locale": "en-US",
+    "organization_id": 114108348332,
+    "role": "agent",
+    "verified": true,
+    "external_id": null,
+    "tags": [],
+    "alias": "",
+    "active": true,
+    "shared": false,
+    "shared_agent": false,
+    "last_login_at": "2024-05-31T12:48:54.000Z",
+    "two_factor_auth_enabled": null,
+    "signature": "Best,\n\nBen Davis (he/him)\nSr. Technical Support Engineer | Pendo.io\nRaleigh, NC\n_______________________\n\nPlease note that tickets without a response will auto-close after 5 days",
+    "details": "",
+    "notes": "",
+    "role_type": 0,
+    "custom_role_id": 114094925852,
+    "moderator": false,
+    "ticket_restriction": null,
+    "only_private_comments": false,
+    "restricted_agent": false,
+    "suspended": false,
+    "default_group_id": 15669110415131,
+    "report_csv": false,
+    "user_fields": {
+      "agent_ooo": false,
+      "free_trial_active": false,
+      "pendo_last_visit_date": null,
+      "quickie_user_settings": "{\"saved_searches\":[]}",
+      "sf_created_date": null,
+      "sync_with_salesforce": false
+    }
+  },
+  "collaborator": [],
+  "recipient": null,
+  "group": {
+    "url": "https://pendo.zendesk.com/api/v2/groups/15669110415131.json",
+    "id": 15669110415131,
+    "is_public": true,
+    "name": "Technical Support [Tier 2]",
+    "description": "",
+    "default": false,
+    "deleted": false,
+    "created_at": "2023-05-22T17:52:38.000Z",
+    "updated_at": "2023-05-22T17:52:38.000Z"
+  },
+  "organization": {
+    "url": "https://pendo.zendesk.com/api/v2/organizations/361351081992.json",
+    "id": 361351081992,
+    "name": "SafetyChain Software",
+    "shared_tickets": false,
+    "shared_comments": false,
+    "external_id": null,
+    "created_at": "2021-03-06T05:23:37.000Z",
+    "updated_at": "2024-03-20T06:08:11.000Z",
+    "domain_names": [
+      "safetychain.com"
+    ],
+    "details": null,
+    "notes": null,
+    "group_id": null,
+    "tags": [
+      "customer",
+      "group_2"
+    ],
+    "organization_fields": {
+      "account_id__18_": "001j000000fiH65AAE",
+      "account_priority": null,
+      "account_type": "Paid Account/Direct Customer",
+      "ae": "Adriane Goetze",
+      "arr": 52454.9833,
+      "can_t_grant_app_access": false,
+      "can_t_grant_sub_access": false,
+      "cem_assigned": "McKenna Claffey",
+      "csm_assigned": "Customer Growth CEM",
+      "days_until_renewal": null,
+      "da_subscription_type": null,
+      "exclude_from_glowtouch": false,
+      "hq_country": "United States",
+      "iscustomer": true,
+      "is_at_risk": false,
+      "japan_partner": false,
+      "logo_arr": 52454.9833,
+      "premium_agent": null,
+      "premium_support": false,
+      "premium_support_asignee": null,
+      "roe_sales_segment": "Commercial",
+      "sales_region": "NA",
+      "sales_territory": "NOR CAL",
+      "self_serve": false,
+      "sync_with_salesforce": false,
+      "tam_assigned": null,
+      "tam_email": null,
+      "unique_maus_last_30_days": "0",
+      "user_iq_promo_started": null,
+      "us_support_only": false,
+      "_of_pendo_free_subs": 0
+    }
+  },
+  "comments": [
+    {
+      "id": 20857612949531,
+      "type": "Comment",
+      "author_id": 15219511038491,
+      "body": "I'm setting this is a high priority since its Friday and I need to make sure I have this configured and ready to go for Monday. I have a guide that I would like to schedule it to go live on Monday. When I look at the knowledge base article it says that in order for a scheduled guide to publish it has to be set to \"scheduled\" status. I set the schedule setting on the guide itself, but I don't scheduled as an option on the guide for the status: ![](https://pendo.zendesk.com/attachments/token/EdWUohWunxf9fmLVrghSomSeb/?name=mceclip0.png)",
+      "html_body": "<div class=\"zd-comment\" dir=\"auto\"><p dir=\"auto\">I'm setting this is a high priority since its Friday and I need to make sure I have this configured and ready to go for Monday. I have a guide that I would like to schedule it to go live on Monday. When I look at the knowledge base article it says that in order for a scheduled guide to publish it has to be set to \"scheduled\" status. I set the schedule setting on the guide itself, but I don't scheduled as an option on the guide for the status:<img src=\"https://pendo.zendesk.com/attachments/token/EdWUohWunxf9fmLVrghSomSeb/?name=mceclip0.png\"></p></div>",
+      "plain_body": "I'm setting this is a high priority since its Friday and I need to make sure I have this configured and ready to go for Monday. I have a guide that I would like to schedule it to go live on Monday. When I look at the knowledge base article it says that in order for a scheduled guide to publish it has to be set to \"scheduled\" status. I set the schedule setting on the guide itself, but I don't scheduled as an option on the guide for the status:",
+      "public": true,
+      "attachments": [],
+      "audit_id": 20857612949403,
+      "ticket_id": 163388,
+      "via": {
+        "channel": "web",
+        "source": {
+          "from": {},
+          "to": {},
+          "rel": null
+        }
+      },
+      "metadata": {
+        "custom": {}
+      },
+      "created_at": "2023-12-01T19:15:40.000Z"
+    },
+    {
+      "id": 20858930520859,
+      "type": "Comment",
+      "author_id": 15219511038491,
+      "body": "I have figured this one out.\n\n\n\nThank you,\n\n\n\n**Name**\n\nTraining Program Developer | Customer Success\n\nSafetyChain Software |Mobile (415) 246-9222",
+      "html_body": "<div class=\"zd-comment zd-comment-pre-styled\" dir=\"auto\"><div style=\"page: WordSection1\"><p style=\" font-size: 11.0pt; margin: 0in\" dir=\"auto\">I have figured this one out.</p><p style=\" font-size: 11.0pt; margin: 0in\" dir=\"auto\">&nbsp;</p><p style=\" font-size: 11.0pt; margin: 0in\" dir=\"auto\">Thank you, </p><p style=\" font-size: 11.0pt; margin: 0in\" dir=\"auto\">&nbsp;</p><div><p style=\" font-size: 11.0pt; margin: 3.0pt 0in 0in\" dir=\"auto\"><b><span style=\"background-color: white; color: #1D1C1D;  font-size: 12.0pt\">Name</span></b><span style=\"font-size: 12.0pt\"></span></p><p style=\" font-size: 11.0pt; margin: 3.0pt 0in 0in\" dir=\"auto\"><span style=\"background-color: white; color: #1D1C1D;  font-size: 12.0pt\">Training Program Developer | Customer Success</span><span style=\"font-size: 12.0pt\"></span></p><p style=\" font-size: 11.0pt; margin: 3.0pt 0in 0in\" dir=\"auto\"><span style=\"background-color: white; color: #1D1C1D;  font-size: 12.0pt\">SafetyChain Software |Mobile (415) 246-9222</span><span style=\"font-size: 12.0pt\"></span></p></div><p style=\" font-size: 11.0pt; margin: 0in\" dir=\"auto\">&nbsp;</p></div></div>",
+      "plain_body": "I have figured this one out.  &nbsp;  Thank you,   &nbsp;   Name  Training Program Developer | Customer Success  SafetyChain Software |Mobile (415) 246-9222   &nbsp;",
+      "public": true,
+      "attachments": [
+        {
+          "url": "https://pendo.zendesk.com/api/v2/attachments/20858887449883.json",
+          "id": 20858887449883,
+          "file_name": "image006.png",
+          "content_url": "https://pendo.zendesk.com/attachments/token/5Um40sz1QPfmgDM3U8LkEl3uC/?name=image006.png",
+          "mapped_content_url": "https://support.pendo.io/attachments/token/5Um40sz1QPfmgDM3U8LkEl3uC/?name=image006.png",
+          "content_type": "image/png",
+          "size": 672,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "malware_access_override": false,
+          "malware_scan_result": "malware_not_found",
+          "thumbnails": [
+            {
+              "url": "https://pendo.zendesk.com/api/v2/attachments/20858916676763.json",
+              "id": 20858916676763,
+              "file_name": "image006_thumb.png",
+              "content_url": "https://pendo.zendesk.com/attachments/token/x6i58ikQ6nxk0o0Jw0ZCRgyY5/?name=image006_thumb.png",
+              "mapped_content_url": "https://support.pendo.io/attachments/token/x6i58ikQ6nxk0o0Jw0ZCRgyY5/?name=image006_thumb.png",
+              "content_type": "image/png",
+              "size": 1324,
+              "width": 80,
+              "height": 26,
+              "inline": false,
+              "deleted": false,
+              "malware_access_override": false,
+              "malware_scan_result": "malware_not_found"
+            }
+          ]
+        },
+        {
+          "url": "https://pendo.zendesk.com/api/v2/attachments/20858903472795.json",
+          "id": 20858903472795,
+          "file_name": "image007.png",
+          "content_url": "https://pendo.zendesk.com/attachments/token/xfoqoltIi32jtx8uJuHHK2nik/?name=image007.png",
+          "mapped_content_url": "https://support.pendo.io/attachments/token/xfoqoltIi32jtx8uJuHHK2nik/?name=image007.png",
+          "content_type": "image/png",
+          "size": 960,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "malware_access_override": false,
+          "malware_scan_result": "malware_not_found",
+          "thumbnails": [
+            {
+              "url": "https://pendo.zendesk.com/api/v2/attachments/20858902847003.json",
+              "id": 20858902847003,
+              "file_name": "image007_thumb.png",
+              "content_url": "https://pendo.zendesk.com/attachments/token/5VxhjcnxXxjJTkiySTIhI37KE/?name=image007_thumb.png",
+              "mapped_content_url": "https://support.pendo.io/attachments/token/5VxhjcnxXxjJTkiySTIhI37KE/?name=image007_thumb.png",
+              "content_type": "image/png",
+              "size": 1207,
+              "width": 80,
+              "height": 18,
+              "inline": false,
+              "deleted": false,
+              "malware_access_override": false,
+              "malware_scan_result": "malware_not_found"
+            }
+          ]
+        },
+        {
+          "url": "https://pendo.zendesk.com/api/v2/attachments/20858945727131.json",
+          "id": 20858945727131,
+          "file_name": "image005.png",
+          "content_url": "https://pendo.zendesk.com/attachments/token/9tz0mURKYzaglJaIRSezxWIH0/?name=image005.png",
+          "mapped_content_url": "https://support.pendo.io/attachments/token/9tz0mURKYzaglJaIRSezxWIH0/?name=image005.png",
+          "content_type": "image/png",
+          "size": 959,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "malware_access_override": false,
+          "malware_scan_result": "malware_not_found",
+          "thumbnails": [
+            {
+              "url": "https://pendo.zendesk.com/api/v2/attachments/20858903688091.json",
+              "id": 20858903688091,
+              "file_name": "image005_thumb.png",
+              "content_url": "https://pendo.zendesk.com/attachments/token/1SA0O9eL5AQlPNnBX3NN93WWP/?name=image005_thumb.png",
+              "mapped_content_url": "https://support.pendo.io/attachments/token/1SA0O9eL5AQlPNnBX3NN93WWP/?name=image005_thumb.png",
+              "content_type": "image/png",
+              "size": 1145,
+              "width": 80,
+              "height": 18,
+              "inline": false,
+              "deleted": false,
+              "malware_access_override": false,
+              "malware_scan_result": "malware_not_found"
+            }
+          ]
+        },
+        {
+          "url": "https://pendo.zendesk.com/api/v2/attachments/20858945761819.json",
+          "id": 20858945761819,
+          "file_name": "image008.png",
+          "content_url": "https://pendo.zendesk.com/attachments/token/4d4aIyv71csZGVVsumBcz8mBy/?name=image008.png",
+          "mapped_content_url": "https://support.pendo.io/attachments/token/4d4aIyv71csZGVVsumBcz8mBy/?name=image008.png",
+          "content_type": "image/png",
+          "size": 672,
+          "width": null,
+          "height": null,
+          "inline": false,
+          "deleted": false,
+          "malware_access_override": false,
+          "malware_scan_result": "malware_not_found",
+          "thumbnails": [
+            {
+              "url": "https://pendo.zendesk.com/api/v2/attachments/20858887736091.json",
+              "id": 20858887736091,
+              "file_name": "image008_thumb.png",
+              "content_url": "https://pendo.zendesk.com/attachments/token/DNV3NFIz1Mz4NjI0n4b9x7eS9/?name=image008_thumb.png",
+              "mapped_content_url": "https://support.pendo.io/attachments/token/DNV3NFIz1Mz4NjI0n4b9x7eS9/?name=image008_thumb.png",
+              "content_type": "image/png",
+              "size": 1331,
+              "width": 80,
+              "height": 26,
+              "inline": false,
+              "deleted": false,
+              "malware_access_override": false,
+              "malware_scan_result": "malware_not_found"
+            }
+          ]
+        }
+      ],
+      "audit_id": 20858902593563,
+      "ticket_id": 163388,
+      "via": {
+        "channel": "email",
+        "source": {
+          "from": {
+            "address": "customer@email.com",
+            "name": "Customer Name",
+            "original_recipients": [
+              "customer@email.com",
+              "support@pendo.io"
+            ]
+          },
+          "to": {
+            "name": "Pendo",
+            "address": "support@pendo.io"
+          },
+          "rel": null
+        }
+      },
+      "created_at": "2023-12-01T19:45:36.000Z"
+    },
+    {
+      "id": 20860590360987,
+      "type": "Comment",
+      "author_id": 10801700409371,
+      "body": "Hey Serena,\n\nThank you for reaching out and taking the time to resolve your issue. We appreciate your efforts and are glad that you were able to identify the issue and find the solution. I'll go ahead and close this request. If you have any more questions or concerns, please don't hesitate to contact us by creating a new ticket. I hope you have a great day!\n\n\nBest,\n\nBen D.\nTechnical Success Engineer | Pendo.io\nRaleigh, NC\n\n* * *\n\nPlease note that tickets without a response will auto-close after 5 days",
+      "html_body": "<div class=\"zd-comment\" dir=\"auto\">Hey Serena,<br>&nbsp;<br>Thank you for reaching out and taking the time to resolve your issue. We appreciate your efforts and are glad that you were able to identify the issue and find the solution. I'll go ahead and close this request. If you have any more questions or concerns, please don't hesitate to contact us by creating a new ticket. I hope you have a great day!&nbsp;<br>&nbsp;<br>\n\n<span class=\"collapse-signature\"></span><div class=\"signature\"><p dir=\"auto\">Best,</p>\n<p dir=\"auto\">Ben D.<br>\nTechnical Success Engineer | Pendo.io<br>\nRaleigh, NC</p>\n<hr>\n<p dir=\"auto\">Please note that tickets without a response will auto-close after 5 days</p></div></div>",
+      "plain_body": "Hey Serena,\n&nbsp;\nThank you for reaching out and taking the time to resolve your issue. We appreciate your efforts and are glad that you were able to identify the issue and find the solution. I'll go ahead and close this request. If you have any more questions or concerns, please don't hesitate to contact us by creating a new ticket. I hope you have a great day!&nbsp;\n&nbsp;\n\n\n  Best, \n Ben D.\n\nTechnical Success Engineer | Pendo.io\n\nRaleigh, NC \n \n Please note that tickets without a response will auto-close after 5 days",
+      "public": true,
+      "attachments": [],
+      "audit_id": 20860590360859,
+      "ticket_id": 163388,
+      "via": {
+        "channel": "web",
+        "source": {
+          "from": {},
+          "to": {},
+          "rel": null
+        }
+      },
+      "metadata": {
+        
+        "custom": {}
+      },
+      "created_at": "2023-12-01T20:23:50.000Z"
+    }
+  ]
+}
