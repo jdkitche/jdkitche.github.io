@@ -12,42 +12,17 @@
         pendo.initialize({
 //             disablecookies: true,
             visitor: {
-                id:  'drift-visitor',
+                id:  'zendesk-visitor',
                 email: 'email@email.com',
-                name: 'my name',
-                emailid: 'visitor-1@pendo.io',   // Required if user is logged in
-                role: 'Admin',
-                return_url: 'https://www.google.com',
-                
-                //drift info
-                
-                userId: 'drift-visitor',
-                
-                
-                //enabledIntegrationVisitors: ['microsoft', 'enforce_modules','blackberry_modules'],
-                //role: ["Guardian"]
-                // email:        // Optional
-                // role:         // Optional
-                // You can add any additional visitor level key-values here,
-                // as long as it's not one of the above reserved names.
+                name: 'Test User',
+                role: 'Admin'
             },
             account: {
-                id: "drift-account"     ,     // Highly recommended
+                id: "zendesk-account"     ,     // Highly recommended
                 accountfield:  '100',
                 boolean_flag: false
-                // name:         // Optional
-                // planLevel:    // Optional
-                // planPrice:    // Optional
-                // creationDate: // Optional
-                // You can add any additional account level key-values here,
-                // as long as it's not one of the above reserved names.
-            },
-      	 //   parentAccount: {
-      	  //    id:  'Parent Account 4',
-      	  //     name:   "enabled integration test"      // Optional
-      	      // You can add any additional master account level
-      	      // key-values here.
-      	    //}
+                
+            }
         });
       })('fd2507d5-0da6-47c2-5189-f087c06e6922');
 
