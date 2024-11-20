@@ -730,6 +730,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Start of pendo1732030378 Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=dc4afdde-f15e-4734-822a-ff35c717c3cf"> </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+
+  
+<!--This auth code DOES work-->
+<!-- <script>
+  function base64url(source) {
+    encodedSource = CryptoJS.enc.Base64.stringify(source);
+    encodedSource = encodedSource.replace(/=+$/, '');
+    encodedSource = encodedSource.replace(/\+/g, '-');
+    encodedSource = encodedSource.replace(/\//g, '_');
+    return encodedSource;
+}
+
+function createJWT(header, data, secret = undefined) {
+    let stringifiedHeader = CryptoJS.enc.Utf8.parse(JSON.stringify(header));
+    let encodedHeader = base64url(stringifiedHeader);
+    let stringifiedData = CryptoJS.enc.Utf8.parse(JSON.stringify(data));
+    let encodedData = base64url(stringifiedData);
+    let token = encodedHeader + "." + encodedData;
+    if (!secret) return token;
+    let signature = CryptoJS.HmacSHA256(token, secret);
+    signature = base64url(signature);
+    return encodedHeader + "." + encodedData + "." + signature;
+}
+
+const header = {
+    "alg": "HS256",
+    "typ": "JWT"
+};
+
+//Sandbox Auth Key:  zFMCvEPdYAmrr4zbxgaCqPIRCW0f88RNfWrsNbVrF-17eC05rTuqr5gyTEngCVgXMFNzr5KBoXiQtZSfDvP_SA
+  
+var timeStamp = Math.floor(Date.now() / 1000);
+console.log(timeStamp)
+const data = {
+  "name": pendo.getSerializedMetadata().visitor.name,
+  "email": pendo.getSerializedMetadata().visitor.email,
+  "iat": timeStamp,
+  "jti": "nov20"
+};
+const secret = "378acdcbfca4a077708efa5c37e368dc";
+
+
+const token = createJWT(header, data, secret);
+output = `${token}`;
+
+console.log(output)
+
+window.zESettings = {
+    webWidget: {
+      authenticate: {
+        jwtFn: function(callback) {
+          callback(output);
+            }
+        }
+    }
+};
+</script> -->
 <!-- End of pendo1732030378 Zendesk Widget script -->
   
 <!--ZendeskChat-->
