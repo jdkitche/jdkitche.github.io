@@ -758,36 +758,33 @@ function createJWT(header, data, secret = undefined) {
 
 const header = {
     "alg": "HS256",
-    "typ": "JWT"
+    "typ": "JWT",
+    "kid": "app_673e1522bc6cb1391279f715"
 };
 
 //Sandbox Auth Key:  zFMCvEPdYAmrr4zbxgaCqPIRCW0f88RNfWrsNbVrF-17eC05rTuqr5gyTEngCVgXMFNzr5KBoXiQtZSfDvP_SA
   
 var timeStamp = Math.floor(Date.now() / 1000);
 console.log(timeStamp)
-const data = {
-  "name": pendo.getSerializedMetadata().visitor.name,
-  "email": pendo.getSerializedMetadata().visitor.email,
-  "iat": timeStamp,
-  "jti": "nov20"
+var payload = {
+  "external_id": "email@email.com",
+  "scope":"user",
+  "name": "Test User",
+  "email": "email@email.com",
+  "iat": timeStamp
 };
-const secret = "zFMCvEPdYAmrr4zbxgaCqPIRCW0f88RNfWrsNbVrF-17eC05rTuqr5gyTEngCVgXMFNzr5KBoXiQtZSfDvP_SA";
+const secret = "ae2qVvMLPF7iuVSlocFer2MjkUy5gBV9emk81GHqos2ZIm3Lv4k7JlALbd7FVpCVs9ApMqN6lRtT7hn5GPjtkw";
 
 
-const token = createJWT(header, data, secret);
+var token = createJWT(header, data, secret);
 output = `${token}`;
 
 console.log(output)
 
-window.zESettings = {
-    webWidget: {
-      authenticate: {
-        jwtFn: function(callback) {
-          callback(output);
-            }
-        }
-    }
-};
+window.zE('messenger', 'loginUser', function (callback) {
+  callback('new-jwt-for-user');
+});
+  
 </script>
 <!-- End of pendo1732030378 Zendesk Widget script -->
   
