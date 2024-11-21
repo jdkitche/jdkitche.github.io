@@ -776,7 +776,7 @@ var payload = {
 const secret = "ae2qVvMLPF7iuVSlocFer2MjkUy5gBV9emk81GHqos2ZIm3Lv4k7JlALbd7FVpCVs9ApMqN6lRtT7hn5GPjtkw";
 
 
-var token = createJWT(header, data, secret);
+var token = createJWT(header, payload, secret);
 output = `${token}`;
 
 console.log(output)
