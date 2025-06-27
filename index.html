@@ -42,6 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <script
     id="__ada"
+    data-lazy
     data-handle="pendo-sandbox"
     src="https://static.ada.support/embed2.js">
 </script>
@@ -53,7 +54,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL4D6BL"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>-->
 <!-- End Google Tag Manager (noscript) -->
-  
+<script>
+  adaEmbed.start({
+  handle: "pendo-sandbox",
+  metaFields: {
+    username: "Jesse Kitchens",
+    phone_number: "123-456-7890",
+    visitorId: "jesse@pendo.io",
+    email:"jesse@pendo.io"
+  },
+  chatterTokenCallback: (chatter) => console.log(chatter)
+});
+</script>  
   
   <!-- Page Wrapper -->
   <div id="wrapper">
@@ -730,16 +742,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- Pendo Scripts -->
 
-<script type="text/javascript" src="/pendo.js"></script>
+<!-- <script type="text/javascript" src="/pendo.js"></script> -->
 
 <!-- Start of pendo1732030378 Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=dc4afdde-f15e-4734-822a-ff35c717c3cf"> </script>
+<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=dc4afdde-f15e-4734-822a-ff35c717c3cf"> </script> -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> -->
 
   
 <!--This auth code DOES work-->
-<script>
+<!-- <script>
   function base64url(source) {
     encodedSource = CryptoJS.enc.Base64.stringify(source);
     encodedSource = encodedSource.replace(/=+$/, '');
@@ -789,7 +801,7 @@ window.zE('messenger', 'loginUser', function (callback) {
   callback('new-jwt-for-user');
 });
   
-</script>
+</script> -->
 <!-- End of pendo1732030378 Zendesk Widget script -->
   
 <!--ZendeskChat-->
