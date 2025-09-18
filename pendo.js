@@ -12,13 +12,13 @@
         pendo.initialize({
 //             disablecookies: true,
             visitor: {
-                id:  'zendesk-visitor',
-                email: 'email@email.com',
+                id:  'jdkitche@gmail.com',
+                email: 'jdkitche@gmail.com',
                 name: 'Test User',
                 role: 'Admin'
             },
             account: {
-                id: "zendesk-account"     ,     // Highly recommended
+                id: "Jesse_TS_Test"     ,     // Highly recommended
                 accountfield:  '100',
                 boolean_flag: false
                 
