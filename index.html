@@ -768,6 +768,116 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- Start of pendo1785945356 Zendesk Widget script .... Sandbox Sandbox [8-6-2026]-->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=2ea8164e-e4d5-401b-8994-a1ff59a001e6"> </script>
 <!-- End of pendo1785945356 Zendesk Widget script -->
+
+<!-- ===== Zendesk Messaging JWT auth (TEST HARNESS for pendo1785945356 sandbox) =====
+     Docs: https://developer.zendesk.com/api-reference/widget-messaging/web/authentication/
+     WARNING: This mints the JWT in the browser so you can test user identification.
+     In production the token MUST be signed server-side; never ship the shared secret to a page.
+     This repo is public (GitHub Pages), so DO NOT paste the kid/secret into this file.
+     Instead, set them once in the browser console on the page and reload:
+       localStorage.setItem('zd_jwt_kid',    'app_xxxxxxxxxxxxxxxxxxxxxxxx');
+       localStorage.setItem('zd_jwt_secret', '<shared secret from Admin Center>');
+     Key comes from Admin Center > Account > Security > End user authentication > Messaging > Create key.
+-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+<script>
+(function () {
+  // ---- config: override via localStorage so nothing secret lands in git ----
+  var ZD_JWT_KID    = localStorage.getItem('zd_jwt_kid')    || '';
+  var ZD_JWT_SECRET = localStorage.getItem('zd_jwt_secret') || '';
+  var ZD_JWT_TTL_SECONDS = 60 * 60; // 1 hour; the widget honors `exp`
+
+  // Default test identity. Change per test, or call zdLogin({...}) from the console.
+  var DEFAULT_USER = {
+    external_id: 'jdkitche@gmail.com', // must be unique per user; match Intercom user_id if bridging
+    name: 'Jesse Kitchens',
+    email: 'jdkitche@gmail.com',
+    email_verified: true,
+    // NOTE: the messaging JWT has no organization claim. Org must be set on the Zendesk user
+    // record (Support > Customers, or org domain mapping / API). This value is only stamped on
+    // the conversation as a tag so agents/triggers can see which org the user claims.
+    organization: 'JesseTestOrg'
+  };
+
+  function base64url(wordArray) {
+    return CryptoJS.enc.Base64.stringify(wordArray)
+      .replace(/=+$/, '').replace(/\+/g, '-').replace(/\//g, '_');
+  }
+
+  function mintJwt(user) {
+    if (!ZD_JWT_KID || !ZD_JWT_SECRET) {
+      throw new Error('Zendesk JWT: zd_jwt_kid / zd_jwt_secret not set in localStorage');
+    }
+    var now = Math.floor(Date.now() / 1000);
+    var header  = { alg: 'HS256', typ: 'JWT', kid: ZD_JWT_KID };
+    var payload = {
+      scope: 'user',                       // only valid value
+      external_id: String(user.external_id),
+      name: user.name,
+      email: user.email,
+      email_verified: user.email_verified !== false,
+      iat: now,
+      exp: now + ZD_JWT_TTL_SECONDS
+    };
+    var h = base64url(CryptoJS.enc.Utf8.parse(JSON.stringify(header)));
+    var p = base64url(CryptoJS.enc.Utf8.parse(JSON.stringify(payload)));
+    var sig = base64url(CryptoJS.HmacSHA256(h + '.' + p, ZD_JWT_SECRET));
+    return h + '.' + p + '.' + sig;
+  }
+
+  function login(user) {
+    user = Object.assign({}, DEFAULT_USER, user || {});
+    window.zE('messenger', 'loginUser',
+      function (callback) {
+        // Called on initial login AND whenever the widget gets a 401 and needs a fresh token,
+        // so always mint a new one here rather than reusing a cached string.
+        var token = mintJwt(user);
+        console.log('[zd-auth] issuing JWT for', user.external_id, '\n' + token);
+        callback(token);
+      },
+      function (error) {
+        if (error) {
+          console.error('[zd-auth] login FAILED:', error.type, error.message, error.reason || '');
+        } else {
+          console.log('[zd-auth] login OK as', user.external_id);
+          if (user.organization) {
+            var orgTag = 'org_' + String(user.organization).toLowerCase().replace(/[^a-z0-9]+/g, '_');
+            window.zE('messenger:set', 'conversationTags', [orgTag]);
+            console.log('[zd-auth] conversation tag set:', orgTag);
+          }
+        }
+      }
+    );
+  }
+
+  function logout() {
+    window.zE('messenger', 'logoutUser');
+    console.log('[zd-auth] logged out');
+  }
+
+  // Console helpers for testing different identities:
+  //   zdLogin()                                        -> DEFAULT_USER
+  //   zdLogin({external_id:'u2', name:'Other', email:'other@example.com'})
+  //   zdLogout()
+  //   zdMintJwt({external_id:'u2'})                    -> just returns a token (paste into jwt.io)
+  window.zdLogin = login;
+  window.zdLogout = logout;
+  window.zdMintJwt = function (u) { return mintJwt(Object.assign({}, DEFAULT_USER, u || {})); };
+
+  // Auto-login on page load once the widget is ready.
+  function whenReady(fn, tries) {
+    if (window.zE) return fn();
+    if (tries <= 0) return console.warn('[zd-auth] zE never became available');
+    setTimeout(function () { whenReady(fn, tries - 1); }, 250);
+  }
+  if (ZD_JWT_KID && ZD_JWT_SECRET) {
+    whenReady(function () { login(); }, 40);
+  } else {
+    console.warn('[zd-auth] Skipping auto-login: set zd_jwt_kid and zd_jwt_secret in localStorage, then reload.');
+  }
+})();
+</script>
+<!-- ===== End Zendesk Messaging JWT auth ===== -->
   
 <!-- Pendo Scripts -->
 <!--<script type="text/javascript" src="/pendo.js"></script>-->
