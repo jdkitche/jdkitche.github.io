@@ -825,8 +825,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     return h + '.' + p + '.' + sig;
   }
 
-  function login(user) {
+  // Pendo Track Event: support_messenger_authenticated
+  // Fired once per loginUser completion (success or failure). Never include
+  // external_id, name or email here (PII). No-ops if the Pendo agent is not loaded.
+  function trackMessengerAuthenticated(props) {
+    try {
+      if (window.pendo && typeof window.pendo.track === 'function') {
+        window.pendo.track('support_messenger_authenticated', props);
+      }
+    } catch (e) {
+      console.warn('[zd-auth] pendo.track failed', e);
+    }
+  }
+
+  // trigger: 'auto' for the page-load login, 'manual' for the zdLogin() console helper.
+  function login(user, trigger) {
     user = Object.assign({}, DEFAULT_USER, user || {});
+    trigger = trigger || 'manual';
     window.zE('messenger', 'loginUser',
       function (callback) {
         // Called on initial login AND whenever the widget gets a 401 and needs a fresh token,
@@ -838,13 +853,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       function (error) {
         if (error) {
           console.error('[zd-auth] login FAILED:', error.type, error.message, error.reason || '');
+          trackMessengerAuthenticated({
+            outcome: 'failure',
+            error_type: String(error.type || 'unknown').substring(0, 100),
+            error_message: String(error.message || '').substring(0, 150),
+            error_reason: String(error.reason || '').substring(0, 100),
+            trigger: trigger
+          });
         } else {
           console.log('[zd-auth] login OK as', user.external_id);
+          var orgTag = '';
           if (user.organization) {
-            var orgTag = 'org_' + String(user.organization).toLowerCase().replace(/[^a-z0-9]+/g, '_');
+            orgTag = 'org_' + String(user.organization).toLowerCase().replace(/[^a-z0-9]+/g, '_');
             window.zE('messenger:set', 'conversationTags', [orgTag]);
             console.log('[zd-auth] conversation tag set:', orgTag);
           }
+          trackMessengerAuthenticated({
+            outcome: 'success',
+            org_tag: orgTag.substring(0, 100),
+            jwt_ttl_seconds: ZD_JWT_TTL_SECONDS,
+            trigger: trigger
+          });
         }
       }
     );
@@ -860,7 +889,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   //   zdLogin({external_id:'u2', name:'Other', email:'other@example.com'})
   //   zdLogout()
   //   zdMintJwt({external_id:'u2'})                    -> just returns a token (paste into jwt.io)
-  window.zdLogin = login;
+  window.zdLogin = function (u) { login(u, 'manual'); };
   window.zdLogout = logout;
   window.zdMintJwt = function (u) { return mintJwt(Object.assign({}, DEFAULT_USER, u || {})); };
 
@@ -871,7 +900,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     setTimeout(function () { whenReady(fn, tries - 1); }, 250);
   }
   if (ZD_JWT_KID && ZD_JWT_SECRET) {
-    whenReady(function () { login(); }, 40);
+    whenReady(function () { login(null, 'auto'); }, 40);
   } else {
     console.warn('[zd-auth] Skipping auto-login: set zd_jwt_kid and zd_jwt_secret in localStorage, then reload.');
   }
